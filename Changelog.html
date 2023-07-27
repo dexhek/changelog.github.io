@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+	<title>Nyx Changelog</title>
+</head>
+<body>
+	<div class="gradient-container"></div>
+<!--
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <div class="table100">
+                    <table>
+                        <thead>
+                            <tr class="table100-head">
+                                <th class="column1">Descrizione</th>
+                                <th class="column2">ETA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="column1">Rinnovamento dell'interfaccia grafica per l'esperienza utente (UX) e l'interfaccia utente (UI)</td>
+                                <td class="column2">Nyx ver. 2023 </td>
+                            </tr>
+                            <tr>
+                                <td class="column1"> Migrazione del pacchetto di installazione dal sistema Wix a Squirrel</td>
+                                <td class="column2">Nyx ver. 2023 </td>
+                            </tr>
+                            <tr>
+                                <td class="column1"> Implementazione di una gestione avanzata dei task, con l'obiettivo di migliorare la produttività (WOP)</td>
+                                <td class="column2">Nyx ver. 2023 </td>
+                            </tr>
+                            <tr>
+                                <td class="column1"> Trasferimento dei file 'Changelog' su una piattaforma online, potenzialmente su Github</td>
+                                <td class="column2">Nyx ver. 2023 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+	<div class="text-center">
+		<h1>Nyx Changelog</h1>
+	</div>
+	<div class="content">
+		<div class="container grid-lg">
+			<div class="columns">
+				<div class="column col-10 col-sm-12 col-mx-auto text-left">
+					<!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.8.1</h4><small>rilasciata il -07-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> La nuova linea grafica, introdotta per la prima volta con la versione 8.2.6.0, sarà chiamata "Obsidian Azure"</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Questo nome si ispira a Nyx, la dea della notte, e riflette l'essenza oscura e misteriosa del nuovo design. Il termine "Ossidiana" rappresenta il colore di base quasi nero, simboleggiando la profondità e l'oscurità della notte. Il termine "Azzurro" si riferisce agli accenti blu che aggiungono un tocco di fascino e magia al design complessivo, evocando l'immagine del cielo notturno con le stelle che brillano. L'unione, "Ossidiana Azzurra", crea un'atmosfera di eleganza, mistero e bellezza, catturando perfettamente l'essenza della dea Nyx.</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Al foglio changelog sono state applicate le nueve linee di 'Obsidian Azure'</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> La nuova GUI per la finestra di ricerca degli ordini è stata rielaborata con cura per seguire il design Obsidian Azure, garantendo un'esperienza utente più coerente e accattivante.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Lo strumento PDF.Merge diventa PDF.Tools</li>										
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Interfaccia grafica migliorata</li>
+												<li>La vecchia funzione per unire i file pdf in uno unico è ancora disponibile, integrata nella nuova finestra (Pulsante 'Unisci')</li>
+												<li>Aggiunto un nuovo strumento 'Appiattisci'
+													<ul>
+														<li>Questo strumento appiattisce tutti gli elemeti della pagina (es. Moduli, Quadri, testi .. (Elementi interattivi)) rendendoli non modificabili - Lo scopo è creare uno strumento che sostituisca la ristampa in PDF per coprire le informazioni delicate (es. Pdf con cartiglio coperto per Fornitori)</li>
+														<li>ATTENZIONE! Questo strumento sovrascrive i file pdf selezionati</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.8.0</h4><small>rilasciata il 23-06-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il file Changelog ora ha il tema scuro</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Modificato e aggiornato pachetto di installazione a Wix 4</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Miglioramenti grafici minori</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su StatoOrdini il colore delle date di consegna oltre il mese attuale sono del colore di default</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Rese asincrone molte connessioni al Database</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata in velocità l'algoritmo di esecuzione di molte funzioni</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> lo strumento per avere l'elenco dei file è stato spostato sul menu Strumenti con una nuova logica, ora è un pulsante, e l'elenco lo apre in notepad++ se esistente, altrimenti in notepad di Windows</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il codice è stato sottoposto ad un processo di revisione e ottimizzazione, che ha comportato la rimozione di eventuali elementi superflui e l'apporto di modifiche minori al fine di migliorare la sua efficienza, leggibilità e manutenibilità.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.9</h4><small>rilasciata il 07-06-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il codice è stato sottoposto ad un processo di revisione e ottimizzazione, che ha comportato la rimozione di eventuali elementi superflui e l'apporto di modifiche minori al fine di migliorare la sua efficienza, leggibilità e manutenibilità.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.8</h4><small>rilasciata il 16-05-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornamento pachetti NuGet per il tema e la conversione in PDF</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su Stato ordini e stato tolto il testo in grasetto, i colori diventavano troppo vibranti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su ricerca alias, in base a certe condizioni, precompila automaticamente i textbox in base agli appunti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su ricerca Storico articoli, in base a certe condizioni, precompila automaticamente i textbox in base agli appunti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Ora cambiando schermata con un ordine gia scritto, dovrebbe mantenere i dati</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.7</h4><small>rilasciata il 12-05-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio excel Distinta è stato migliorato, tolta connessione non utile, e aumentata velocita caricamento dati DB</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tolto la data di sviluppo su Home, e aggiunto lo stato se SVILUPPATO o no</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Alcuni bug grafici dovuti all'aggiornamento del tema</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.6</h4><small>rilasciata il 04-05-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Implementazione di un sistema di valutazione a stelle per gli ordini</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>È opportuno considerare la facilità con cui l'ordine è stato sviluppato dal tecnico, non solo in termini di difficoltà, ma anche di problematiche connesse (ad esempio, conformità delle cartelle e dei disegni alle normative e/o convenzioni, chiarezza delle note, tempestività delle risposte del cliente).<br>
+												Il valore predefinito è pari a tre e viene assegnato solo quando lo stato dell'ordine risulta 'sviluppato'. Si consiglia di specificare il motivo nel caso in cui il punteggio sia diverso dalle tre stelle.</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Solid tools è un nuovo strumento che semplifica la conversione tra file CAD, sia in formato 2D che 3D - Beta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Implementazione di un'interfaccia utente (UI) più moderna e pulita per una migliore esperienza visiva</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Scelta di un tema nero ben progettato per ridurre l'affaticamento visivo, migliorare il contrasto e la leggibilità dei contenuti e dare un aspetto elegante e moderno all'UI.</li>
+												<li>Aggiornamento dei colori, dei font e delle icone per renderli più coerenti con il tema nero e migliorare l'usabilità dell'UI.</li>
+												<li>Ottimizzazione dell'interfaccia utente per migliorare la navigazione, la ricerca e la selezione delle funzionalità</li>
+												<li>Risoluzione di eventuali bug e problemi legati all'aggiornamento dell'UI</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il foglio distinta Ora ha la colonna Descrizione sempre in maiuscolo</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il codice è stato sottoposto ad un processo di revisione e ottimizzazione, che ha comportato la rimozione di eventuali elementi superflui e l'apporto di modifiche minori al fine di migliorare la sua efficienza, leggibilità e manutenibilità.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> La funzione "Does it fit" è stata rimossa dal programma. La motivazione principale per la rimozione della funzione è stata la sua bassa utilità.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.5</h4><small>rilasciata il 14-04-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemato nome su Foglio Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio excel Materiale ha un tasto per richiamare il nome tecnico in automatico</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio excel Materiale il titolo va in contrasto quando c'e un certificato/moca</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.4</h4><small>rilasciata il 31-03-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemato Pulisci soluzione del foglio CalcoloVerghe</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio excel Materiale Ora mette il nome tecnico in automatico</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio excel Materiale ora imposta da solo l'area di stampa **BETA** (se sono tante righe si vede troppo piccolo, da studiare una soluzione)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunte dimensioni icona su Gestione Ordini (Inserimento)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata drasticamente la velocita di ricerca di GestioneOrdini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.3</h4><small>rilasciata il 04-02-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Tolto il 2 dal foglio Excel materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> aggiunto mm solo su spessori maggiori di 10, sulla descrizione del foglio Distinta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio Word Etichetta ora si apre in Lettura/Scrittura</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.2</h4><small>rilasciata il 30-01-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Excel ItaEng</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensioni finestra ExcelItaEng</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Excel materiale ora ha doppia firma (LST aggiunto)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.1</h4><small>rilasciata il 19-01-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Excel ItaEng non funziona</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistema aggiornamento</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Aumentati bordi per monitor FullHD</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensione finestre</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornamento dipendenze</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata query Gestione Ordini Per commerciale, ora molto piu veloce</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Rinominata Finestra GestioneCam in InvioGestione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Modifiche al Foglio excel Distinta</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Descrizione esce dalla beta e migliorata formula (piu completa con riconoscimento del padre e spessore nel formato convenzionale)</li>
+												<li>Tolto il foglio e la query "Lavorazioni", ora integrata come colonna in database, per migliorare la velocita e la semplicita</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.7.0</h4><small>rilasciata il 11-01-2023</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> L'aggiornamento non si porta dietro tutti i file, controllare la prossima versione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemati anni su excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span>Altri metodi sono passati ad async</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Colori e migliorie per varie risoluzioni UX</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora il timer ha la scelta per tenerlo sempre in primo piano</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata esponenzialmente la velocita con cui capisce se un tasto puo essere premuto</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramneti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Sicurezza/Info</span> Saltato dalla ver 8.2.6.7 alla 8.2.7.0 perche aggiornamenti importanti, gli intermedi non esistono</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.7</h4><small>rilasciata il 30-12-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Il foglio Etichetta su Strumenti si apre in solo lettura</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Con la distinta del 2023 probabilemte sara da fare un aggiornamento per puntare alle nuove tabelle</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Tradotte alcune frasi in italiano sul codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> I componenti COM ora vengono gestiti e smaltiti corretamente</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tanti metodi sono passati ad async, tra cui anche il Log</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Unificate altre query, migliorata la prestazione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Colori UX</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornato varie label per il 2023</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Evento Natale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.6</h4><small>rilasciata il 16-12-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Ora i fogli Excel vengono correttamente smaltiti, il processo restava aperto</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Alcune query sono state ragruppate, e sfruttano solo una connessione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Alcuni adapter non venivano correttamente smaltiti, sistemato codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Dopo le query, alla chiusura di un form figlio, le tabelle di dati vengono smaltite</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramneti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tolto "_=" a tutte le variabili discard, per migliorare la lettura del codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Evento Natale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.5</h4><small>rilasciata il 12-12-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunto MOCA sul foglio Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Le query ora hanno un commento con l'utente, cosi rende piu facile fare il debug con il profiler</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Rinomina i file in una cartella selezionata, mettendo il nostro Codice al posto dell alias del cliente.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.4</h4><small>rilasciata il 06-12-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Memory leak (Nyx non libera memoria)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Eliminazione Timer alla chiusura del form</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.3</h4><small>(mai rilasciata, cumulativa sulla successiva)</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Refactor Codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Blocco note (Forse verra implementato nuovamente in futuro)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.2</h4><small>rilasciata il 01-10-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio Excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Posizione Data su StrumentiC</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.1</h4><small>rilasciata il 25-10-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ottimizzazione codice Xaml, e beautify</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.6.0</h4><small>rilasciata il 21-10-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colore giallo chiaro su Stato ordini, per gli OC con consegna nel mese corrente</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Non fa piu un array degli utenti</li>
+										<li>
+											<span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Layout genrale
+											<ul>
+												<li>Restyling grafico</li>
+												<li>Schermata principale ora e piu grande di 10px sia in altezza che larghezza</li>
+												<li>Sistemati i vari usercontrol, ora hanno le dimensioni fisse 390x690</li>
+												<li>Gli elementi sono simmetrici, non escono piu dal bordo delf form</li>
+												<li>Miglioramenti e pulizia al codice xaml</li>
+												<li>Il textox Note in Home ha subito un restyling generale</li>
+												<li>Su stato ordini i pulsanti di aggiornamento ed esportazione hanno la stessa dimensione</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramneti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il menu laterale e piu largo di 30px</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tutti i pulsanti di Strumenti sono stati messi in centro e alla stessa distanza</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimesnione pulsanti vari</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il ritardo e stato spostato vicino alla data di inserimento</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Tema bianco</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Alcune ombre che stonavano, o sono state avvicinate alla base, quindi con meno profondita</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Su StrumentiC la data e in posizione sbagliata</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.9</h4><small>rilasciata il 01-10-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Icone generali Nyx</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Layout StrumentiC (Inserimento)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramneti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornamento pachetti nuget</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Layout e grafica Timer</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Ultimo codice moca/cert</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Eliminazione automatica Pers Libellula</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.8</h4><small>rilasciata il 20-07-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Possibilità di aggiornare file core senza aggiornare tutti i Client</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Possibilità di aggiornare Update.bat senza aggiornare tutti i Client</li>
+										<li>
+											<span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> File excel per calcolo verghe modificato sostanzialemte
+											<ul>
+												<li>Ora c'e il tasto nuova soluzione, per portare il foglio com'era all'apertura</li>
+												<li>Possibilita di fare il calcolo considerando pi dimensioni delle verghe</li>
+												<li>Restyling grafico</li>
+												<li>Miglioramenti e pulizia al codice</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata gestione memoria</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora, sui sistemi a 64 bit, viene esguito come processo x64</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Alcuni pezzi fondamentali del programma sono stati centralizzati, ora sono hostati sul Server</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il setup ora pesa meno</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.7</h4><small>rilasciata il 27-06-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Strumento per unire piu file pdf in uno unico (PDF.Merge)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Materiale excel fa il calcolo considerando 5700mm come dimensione verga.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Cambiata icona strumento Pdf to Excel</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.6</h4><small>rilasciata il 08-06-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemata ricerca ordine, tolto percentuale di default</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Strumento per convertire pdf in Excel, OneClick (Pagina unica)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Cambiato logica ricerca ordini, ora con il tasto invio cerca direttamente su tutto l'anno, e la ricerca con filtri mette in automatico la % quando non c'e</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.5</h4><small>rilasciata il 01-06-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Amico Goose :D</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna lavorazioni su Excel Distinta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna lavorazioni su Articolo in Strumenti</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.4</h4><small>rilasciata il 11-05-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Impostate dimensioni minime finestra StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Base per grafici (Alpha)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Modifiche grafiche minori sulla pagina Home</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Data come tipo 'testo' su Excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Restyling Excel Distinta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Excel Distinta ha la pagina Database con la query parametrizzata in base alla pagina Parametri</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Eseguita pulizia e apportati miglioramenti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> RRimossi gli strumenti ODA e MTP da Strumenti, e relativi pulsanti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Fa un array con tutti gli utenti su StatoOrdini, da commentare con il prossimo aggiornamento</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.3</h4><small>rilasciata il 04-04-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Peso foglio excel distinta e Note</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Note produzione su Excel Elenco (StrumentiC)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunto "Giovanni" su Excel materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Velocità caricamento StatoOrdini (ci mette solo il 12.5% del tempo precedente, circa mezzo sec.)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.2</h4><small>rilasciata il 24-03-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Ricerca su Gestione Ordini di StrumentiC (non serve piu percentuale)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Note produzione su Articolo (Strumenti)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Note produzione su Ordine (Strumenti)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.1</h4><small>rilasciata il 15-03-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Aggiunto Memo vicino al pulsante Changelog</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunto "Giorgio" su Excel materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Bloccati momentaneamente due strumenti</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.5.0</h4><small>rilasciata il 24-02-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> NumeroDoc su StatoOrdini ora è considerato come intero (era Stringa, e metteva in ordine alfabetico)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Su StrumentiC, la possibilta di scegliere se avere l'estensione dei file su DragDrop box</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.9</h4><small>rilasciata il 24-02-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemato ultimo stato e relativa desc su StatoOrdini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.8</h4><small>rilasciata il 19-02-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> NumeroDoc su Storico Articoli ora è considedrato come intero (era Stringa, e metteva in ordine alfabetico)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Sistemate alcune directory di un metodo in Utils</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su Storico Articoli è stato invertito l'ordine, i piu recenti sono i primi risultati</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ricerca esatta su Ordini, per cercare in modalita "Contiene", aggiungere %</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.7</h4><small>rilasciata il 07-02-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Traduzione formula su ExcelItaEng</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> su foglio Excel Distinta, colonna Primo? indica se e la prima volta che si ripete il codice nella colonna alias</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Nomi di alcuni strumenti cambiati, per chiarezza</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tolto Simone e aggiunto Sebastian su Excel materiale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.6</h4><small>rilasciata il 25-01-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Calcolo peso StatoOrdini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.5</h4><small>rilasciata il 20-01-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Cliente e descrizione su Datacalc</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Dll non usate e vari riferimenti in Product.wxs</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Calcolo peso StatoOrdini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.4</h4><small>rilasciata il 19-01-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Problema su ricerca ordini in gestione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata velocita inserimento tempi</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Stato Ordini per evitare problemi con caratteri speciali</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.3</h4><small>rilasciata il 10-01-2022</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> tutti i textbox Anno ora prendono l'anno corrente in automatico</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Anno su Foglio excel</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.2</h4><small>rilasciata il 28-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Round in cieling su peso in StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Controllo su cartelle, per non fermarsi al punto, su filedrop di StrumentiC</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.1</h4><small>rilasciata il 27-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Colore date su StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Trim su numero ordine di alcuni datagrid, per una copia senza spazi</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Evento Natale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.4.0</h4><small>rilasciata il 22-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tempo previsto in ore su StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> StatoOrdini ora mostra la consegna colorata, in base alla data</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Errori di binding in XAML</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.9</h4><small>rilasciata il 21-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Ora compare la nota riferita allo stato, su Stato ordini (Tooltip)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Ora compare il numero di righe dell'ordine su Stato ordini (Tooltip)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> StatoOrdini mostra l'ultimo stato, invece di Preso da:</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata query StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Esanno &gt;= su alcune query, invece di =</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.8</h4><small>rilasciata il 17-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Strumento per convertire mail in PDF</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Strumento per convertire qualsiasi dwg/dxf in formato scelto</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.7</h4><small>rilasciata il 16-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Evento Natale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Commerciali vedono il tasto StatoOrdini, ma non abilitato</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.6</h4><small>rilasciata il 16-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Typo per il nuovo anno</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> LaserWatcher datagrid ora si puo modificare</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ricerca aggiornamenti ogni 10 min (era 5)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Consumo energetico elevato e utilizzo CPU, portato da 9% a 0.1% in idle</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.5</h4><small>rilasciata il 15-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Parametrizzazione query di Laserwatcher</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Typo su message-box eliminazione riga</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti sostanziali al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Startup location Laserwatcher impostata su CenterOwner</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Laserwatcher ora e resizabile, impostate dimensioni minime</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornato pachetto DataGridExtensions</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Metodo unin per user non presenti in UnLock (Parziale)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> DialogHost quando ricerca su LaserWatcher</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Commenti o metodi obsoleti, o senza riferimento</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.4</h4><small>rilasciata il 10-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tasto e Finestra Laser Monitor(Watcher) su Strumenti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> DialogHost su ricerca in LaserWatcher</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> GUID</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tempo di SV teorico su StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Metodo unin per user non presenti in UnLock</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Finestra Clienti passa a 600 in altezza</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Usercontrol del menu laterale compaiono solo se utente isUnlocked</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornato LaserLogService a 2.0.0.0, sistemate colonne ID smallint</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Logica file Changelog, ora devono essere in ordine per tipo</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Cerca aggiornamenti all'apertura, con e senza file core valido</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Controllo se Sistema operativo minore di Win10</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> LaserMonitor dal menu laterale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.3</h4><small>rilasciata il 7-12-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Versione di Nyx nel file di Log</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Aggiunto colonna peso, in tempo, dell ordine</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornata PK</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.2</h4><small>rilasciata il 17-11-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Apertura Nyx da system tray, quando aperto una seconda volta, invece dell'errore</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Importanti miglioramneti al codice, e pulizia themeselector</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Rimosse istruzioni using non necessarie, e fatto refactoring codice con strumento 2</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunta regola per nomi su Excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorato foglio Etichetta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Sql Datagrid Lasermonitor ora asincrona in un altro thread</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.1</h4><small>rilasciata il 16-11-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Stampa automatica foglio Excel materiale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.3.0</h4><small>rilasciata il 16-11-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Area di stampa e interruzione di riga su excel materiale, ora è dinamica</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.9</h4><small>rilasciata il 5-11-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulito e rinnovato codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Programma manager</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunto disclaimer su excel Materiale</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.8</h4><small>rilasciata il 2-10-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Aggiornamento automatico dopo rinomina metodi</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Certificazione</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.7</h4><small>rilasciata il 26-10-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Rinomina metodi</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.6</h4><small>rilasciata il 25-10-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Alt + Barra spaziatrice ora nasconde nyx se aperto, altrimenti lo scopre</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice del menu icontry</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Supporto a Windows 11</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Casella certificati su Excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Verifica integrita all'avvio</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- Here starts new ver -->
+					<div class="section timeline">
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.5</h4><small>rilasciata il 15-10-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Excel Distinta, tolto regole duplicate formattazione condizionale e sistemato tipo colonna spessore, da frazione a numero</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Stato "Fermo per info" passa a "Fermo"</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Non è piu possibile mettere tempo 0</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Sul database tutti i tempi = 0 sono passati a 1</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Modificato pesi specifici di alcuni materiali su excel PESO</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Menu laterale si chiude dopo il click sull'elemento</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tabella funzionalita pianificate su Changelog</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.4</h4><small>rilasciata il 13-09-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Sistema filtraggio nuovo esteso a tutti i datagrid, escluso Ordini</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>I filtri sono a forma di imbuto nell'header del datagrid, cliccando compare la textbox che filtra la colonna</li>
+												<li>L'esportazione in excel esporta solo quello che restituisce la query sql e viene messo in tabella, non tiene in considerazione i filtri di DataGridviewExtension</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Alla chiusura di Nyx, una libreria crasha</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Esportazione in excel di clienti e alias ora funziona, erano stati inseriti campi che iniziavano con "=", e venivano considerati come formule. Convertito le colonne in Text</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Modifiche fatte sul nuovo ide Visual Studio 2022 Preview, ma compilato con il 2019, WiX non è ancora aggiornato</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensioni Window StatoOrdini passa a 1400</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Durante l'inserimento dell'ordine, se forzato il messaggio della conferma ordine non in gestione, e del sv parziale, in note comparira la scritta *(F) o *(P)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.3</h4><small>rilasciata il 7-09-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Problema libreria, tornato a Net Framework 4.7.2</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.2</h4><small>rilasciata il 6-09-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Aggiunto sistema filtraggio nuovo, solo su StatoOrdini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Foglio Etichetta_byC con margini giusti, come risorsa in strumenti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Alla chiusura di Nyx, una libreria crasha</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.1</h4><small>rilasciata il 1-09-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ridotte dimensioni originali Excel Distinta del 99.45%</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ridotte dimensioni originali Excel Elenco del 99.70%</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ridotte dimensioni Setup Nyx del 79.55%</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ridotte dimensioni Nyx del 59.71%</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.2.0</h4><small>rilasciata il 30-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Errore di config.ini causato da ThemeSelector, modificato DataContext solo per Stackpanel</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Aggiornando il datagrid velocementre non manda piu il programma in crash</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiunto .ConfigureAwait(true) su tutti i task</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tutte le variabili non riutilizzate, messe come variabili locali discard</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Possibilita di aggiornare tutti i datagrid con F5</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensioni Window StatoOrdini passa a 1250</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> File separato di ThemeSelector, ora integrato in MainWindow</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.9</h4><small>rilasciata il 27-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Aggiornamento automatico tabella StatoOrdini, ogni 5 min</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Limite ordini per zona rossa, passato a 30.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Numero ordini in StatoOrdini diventa nero quando sotto i 30</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.8</h4><small>rilasciata il 21-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Nyx si chiudeva inserendo il tempo</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulito e ridotto codice html e css pagina Changelog</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tag "Beta"</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Colori tag pagina Changelog</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.7</h4><small>rilasciata il 21-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Menu a tendina con priorità su foglio Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Stato "Iniziato"</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.6</h4><small>rilasciata il 13-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Velocità esportazione in Excel delle tabelle migliorata drasticamente!</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Filtri gia messi su Excel esportato</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.5</h4><small>rilasciata il 08-07-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Priorita ordine in Home</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Data inserimento in Home ora mostra anche l'ora</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Implementazione della prima notifica toast (su cerca aggiornamenti, quando questo non è presente)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.4</h4><small>rilasciata il 24-06-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Stato ordini nascosto comm.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Bloccato visualizza note comm.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.3</h4><small>rilasciata il 15-06-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio Distinta materiale, aggiunto Certificato</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Impostazione di Sicurezza/Info ClickOnce, applicazione con attendibilita totale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Colore tema Nero/Bianco funziona solo se Nyx è eseguito come Admin.(1)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.2</h4><small>rilasciata il 03-06-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio Distinta materiale, aggiunto firma, titolo e ordinato si/no.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Datacalc pulisce textbox dopo inserimento</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.1</h4><small>rilasciata il 29-05-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span>Sistema Calcolo Date con relativo datagrid esportabile in Excel</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.1.0</h4><small>rilasciata il 26-05-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Prenotazione ordine e utente su Stato ordini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Base e menù per calcolo forza lavoro prevista</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Calcolo data SV su StrumentiC Inserimento, nuova formula (peso totale /17*2), con influenza checkbox lav esterne(/27*2).</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Colore tema Nero/Bianco funziona solo se Nyx è eseguito come Admin.(1) (Parziale, solo dando i permessi a Config.ini)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.9</h4><small>rilasciata il 6-05-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Excel Materiale</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Avvio piu lento. (2)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Righe senza tutti i dati non compaiono più in gestione su StrumentiC</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.8</h4><small>rilasciata il 28-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Pulsate per elenco codici da Arca in excel (StrumentiC)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Migliorata formula Excel distinta</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Sicurezza/Info</span> Aggiunta protezione codice e miglioramento compilazione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia codice e preparazione per funzionalità calcolo date</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Avvio più lento.(2)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.7</h4><small>rilasciata il 26-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Query per ricerca in stato ordini, non compaiono piu doppi</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Query per numero totale in stato ordini,adesso segue la query aggiornata</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Colore e sfondo ordini totali</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Posizione colonna Data consegna (Stato ordini), per facilitare lettura</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.6</h4><small>rilasciata il 24-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Compare anche versione sul tooltip nell'area di notifica</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Pulsate per cancellare riga</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Finestra con sistema per cancellare riga</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Inserendo ID_Orders, visibile con il tooltip che compare sul numero Ordine in Visualizza ordini</li>
+												<li>Non si possono cancellare quelli di altri utenti, ma solo i propri</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Log per il sistema cancella riga</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.5</h4><small>rilasciata il 21-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Colonna priorita su stato ordini ha la scritta in chiaro</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Su stato ordini vengono visualizzati tutti gli ordini tranne quelli completamente SV</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Aggiunta colonna Sviluppato su DB Ordini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Aggiunta query per modificare lo valore sviluppato degli ordini recedenti se stato=0</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Aggiunto tecnico rif. su Stato ordini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.4</h4><small>rilasciata il 21-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensioni finestra stato Ordini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Quantità ordini da sv si aggiorna senza riaprire</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> Colore tema Nero/Bianco funziona solo se Nyx è eseguito come Admin.(1)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Miglioramenti query Sql</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Sicurezza/Info</span> Quando Nyx è eseguito come Amm. il Drag&Drop sul menu inserimento non funziona</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Pulsante nascondi Note su Visualizza Ordini, True di default</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna con Priorita Ordine su Stato Ordini</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.3</h4><small>rilasciata il 19-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna Commerciale interno su Clienti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna Tecnico interno su Clienti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Dimensioni testo textbox su Timer</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> "Sistema controllo ordini"</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Pulsate Stato Ordini su schermata Home</li>
+												<li>Nuova finestra con tabella stato ordini (In Ordine di SV)</li>
+												<li style="list-style: none; display: inline">
+													<ul>
+														<li>Testo con Ordini totali da SV</li>
+														<li>Pulsante per aggiornare i dati</li>
+														<li>Pulsate per esportare in Excel</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.2</h4><small>rilasciata il 12-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornata data su materiale excel in 2021</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornata query su Excel Distinta per connessione al server nuovo</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Sensore "ordine gia inserito" solo se lo stato risulta 0 (SV)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Sensori controllo Gestione e SV in Libellula quando lo stato e diverso da 0 (SV)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.1</h4><small>rilasciata il 01-04-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Pulsante Changelog vicino a Cerca Aggiornamenti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramenti minori al codice</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section timeline">
+						<!-- Here starts new ver -->
+						<div class="timeline-item">
+							<div class="timeline-left">
+								<div class="timeline-icon"></div>
+							</div>
+							<div class="changes timeline-content">
+								<h4>v8.2.0.0</h4><small>rilasciata il 26-03-2021</small>
+								<div class="changes-entry">
+									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Stato ordine (Combobox) con i vari stati</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Tabella StatoOrdini nel Database Orders</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Colonna Stato in Visualizza Ordini</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Nome programma diventa Nyx</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Checkbox "Parziale"</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Nome finesta Gestione, era Gesione</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Hotekey F4 ora passa al quarto menu "Lasermonitor"</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Sistema di Changelog in Html</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+<!--
+ <div class="section timeline">
+ <div class="timeline-item">
+ <div class="timeline-left">
+ <div class="timeline-icon"></div>
+ </div>
+ <div class="changes timeline-content">
+ <h4>v1.0.0.0 Esempio</h4><small>rilasciata il 01-04-2021</small>
+ <div class="changes-entry">
+ <ul>
+ <li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> "Lorem ipsum dolor sit amet"</li>
+ <li style="list-style: none; display: inline">
+ <ul>
+ <li>Section 1
+ <ul>
+ <li>Sub-section 1</li>
+ <li>Sub-section 2</li>
+ </ul>
+ </li>
+ </ul>
+ </li>
+ <li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> "Lorem ipsum dolor sit amet"</li>
+ <li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> "Lorem ipsum dolor sit amet"</li>
+ <li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> "Lorem ipsum dolor sit amet"</li>
+ <li><span class="label label-rounded text-light text-capitalize tag-knownissue">Problema conosciuto</span> "Lorem ipsum dolor sit amet"</li>
+ <li><span class="label label-rounded text-light text-capitalize tag-security">Sicurezza/Info</span> "Lorem ipsum dolor sit amet"</li>
+ <li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> "Lorem ipsum dolor sit amet"</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<style>
+	   html {
+  	font-family: sans-serif;
+  	-ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+  	box-sizing: border-box;
+  	font-size: 20px;
+  	line-height: 1.5;
+  	-webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+  	margin: 0;
+  	color: #cfd8dc;
+  	font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, sans-serif;
+  	font-size: .8rem;
+  	overflow-x: hidden;
+  	text-rendering: optimizeLegibility;
+  }
+
+  .gradient-container {
+  	/* Replace these values with your desired gradient start and end points */
+  	background-image: linear-gradient(135deg, #0D1319 30%, #192536 50%, #0D1319 90%);
+  	/* Set the position to fixed to keep the gradient fixed within the viewport */
+  	position: fixed;
+  	/* Set the top, left, right, and bottom to 0 to cover the entire viewport */
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  }
+
+  .content {
+  	/* Set the position to relative to allow the content to flow beneath the gradient */
+  	position: relative;
+  	/* Add some padding to keep the content from being obscured by the gradient */
+  	padding: 20px;
+  	/* Optionally, you can set the font color to contrast with the background */
+  	color: #fff;
+  }
+
+  *, ::after, ::before {
+  	box-sizing: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+  	color: inherit;
+  	font-weight: 500;
+  	line-height: 1.2;
+  	margin: .67em 0 .5em;
+  	font-size: 2em;
+  }
+
+  h1 {
+  	font-size: 2rem;
+  }
+
+  h2 {
+  	font-size: 1.6rem;
+  }
+
+  h3 {
+  	font-size: 1.4rem;
+  }
+
+  h4 {
+  	font-size: 1.2rem;
+  }
+
+  h5 {
+  	font-size: 1rem;
+  }
+
+  h6 {
+  	font-size: .8rem;
+  }
+
+  ul {
+  	margin: .8rem 0 .8rem .8rem;
+  	padding: 0;
+  	list-style: disc inside;
+  }
+
+  ul ul {
+  	margin: .8rem 0 .8rem .8rem;
+  	list-style-type: circle;
+  }
+
+  ul li {
+  	margin-top: .4rem;
+  }
+
+  .label {
+  	border-radius: .1rem;
+  	line-height: 1.2;
+  	padding: .1rem .2rem;
+  	background: #2c2f33;
+  	color: #cfd8dc;
+  	display: inline-block;
+  }
+
+  .label.label-rounded {
+  	border-radius: 5rem;
+  	padding: .1rem .4rem;
+  }
+
+  .container {
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: .4rem;
+  	padding-right: .4rem;
+  	width: 100%;
+  }
+
+  .container.grid-lg {
+  	max-width: 976px;
+  }
+
+  .container.grid-sm {
+  	max-width: 616px;
+  }
+
+  .columns {
+  	display: flex;
+  	flex-wrap: wrap;
+  	margin-left: -.4rem;
+  	margin-right: -.4rem;
+  }
+
+  .column {
+  	flex: 1;
+  	max-width: 100%;
+  	padding-left: .4rem;
+  	padding-right: .4rem;
+  }
+
+  .col-auto {
+  	flex: none;
+  	max-width: none;
+  	width: auto;
+  }
+
+  .col-mx-auto {
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .text-light {
+  	color: #ffffff;
+  }
+
+  .text-left {
+  	text-align: left;
+  }
+
+  .text-center {
+  	text-align: center;
+  }
+
+  .text-capitalize {
+  	text-transform: capitalize;
+  }
+
+  .timeline .timeline-item {
+  	display: flex;
+  	margin-bottom: 1.2rem;
+  	position: relative;
+  }
+
+  .timeline .timeline-item::before {
+  	background: #2c2f33;
+  	content: "";
+  	height: 100%;
+  	left: 11px;
+  	position: absolute;
+  	top: 1.2rem;
+  	width: 2px;
+  }
+
+  .timeline .timeline-item .timeline-left {
+  	flex: none;
+  }
+
+  .timeline .timeline-item .timeline-content {
+  	flex: auto;
+  	padding: 2px 0 2px .8rem;
+  }
+
+  .timeline .timeline-item .timeline-icon {
+  	border-radius: 50%;
+  	color: #cfd8dc;
+  	display: block;
+  	height: 1.2rem;
+  	text-align: center;
+  	width: 1.2rem;
+  }
+
+  .timeline .timeline-item .timeline-icon::before {
+  	border: .1rem solid #5755d9;
+  	border-radius: 50%;
+  	content: "";
+  	display: block;
+  	height: .4rem;
+  	left: .4rem;
+  	position: absolute;
+  	top: .4rem;
+  	width: .4rem;
+  }
+
+  .timeline .timeline-item .timeline-icon.icon-lg {
+  	background: #5755d9;
+  	line-height: 1.2rem;
+  }
+
+  .timeline .timeline-item .timeline-icon.icon-lg::before {
+  	content: none;
+  }
+
+  .tag-added {
+  	background: #32b643;
+  }
+
+  .tag-changed {
+  	background: #b59824;
+  }
+
+  .tag-removed {
+  	background: #696969;
+  }
+
+  .tag-knownissue {
+  	background: #dc143c;
+  }
+
+  .tag-fixed {
+  	background: #1e90ff;
+  }
+
+  .tag-security {
+  	background: #87ceeb;
+  }
+
+  .tag-beta {
+  	background: #9932cc;
+  }
+
+  .changes-entry>ul>li, .changes>li {
+  	list-style: none;
+  }
+
+  .changes h4 {
+  	margin-bottom: 0;
+  }
+
+  limiter {
+  	width: 100%;
+  	margin: 0 auto;
+  }
+
+  .wrap-table100 {
+  	width: 800px;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  table {
+  	border-spacing: 1;
+  	border-collapse: collapse;
+  	background: #2c2f33;
+  	border-radius: 10px;
+  	overflow: hidden;
+  	width: 100%;
+  	margin: 0 auto;
+  	position: relative;
+  }
+
+  table * {
+  	position: relative;
+  }
+
+  table td, table th {
+  	padding-left: 8px;
+  }
+
+  table thead tr {
+  	height: 45px;
+  	background: #1e90ff;
+  }
+
+  table tbody tr {
+  	height: 50px;
+  }
+
+  table tbody tr:last-child {
+  	border: 0;
+  }
+
+  table td, table th {
+  	text-align: left;
+  }
+
+  .table100-head th {
+  	font-size: 18px;
+  	color: #cfd8dc;
+  	line-height: 1.2;
+  	font-weight: unset;
+  }
+
+  tbody tr:nth-child(even) {
+  	background-color: #383c40;
+  }
+
+  tbody tr {
+  	font-size: 15px;
+  	color: #cfd8dc;
+  	line-height: 1.2;
+  	font-weight: unset;
+  }
+
+  tbody tr:hover {
+  	color: #cfd8dc;
+  	background-color: #383c40;
+  	cursor: pointer;
+  }
+
+  .column1 {
+  	width: 350px;
+  	padding-left: 20px;
+  }
+
+  .column2 {
+  	width: 80px;
+  	text-align: right;
+  	padding-right: 20px;
+  }
+
+  .column3 {
+  	width: 245px;
+  }
+
+  .column4 {
+  	width: 110px;
+  	text-align: right;
+  }
+
+  .column5 {
+  	width: 170px;
+  	text-align: right;
+  }
+
+  .column6 {
+  	width: 222px;
+  	text-align: right;
+  	padding-right: 62px;
+  }
+
+  @media screen and (max-width: 992px) {
+  	table {
+  		display: block;
+  	}
+  	table td, table th, table tr, table>* {
+  		display: block;
+  	}
+  	table thead {
+  		display: none;
+  	}
+  	table tbody tr {
+  		height: auto;
+  		padding: 37px 0;
+  	}
+  	table tbody tr td {
+  		padding-left: 40% !important;
+  		margin-bottom: 24px;
+  	}
+  	table tbody tr td:last-child {
+  		margin-bottom: 0;
+  	}
+  	table tbody tr td:before {
+  		font-family: OpenSans-Regular;
+  		font-size: 14px;
+  		color: #999;
+  		line-height: 1.2;
+  		font-weight: unset;
+  		position: absolute;
+  		width: 40%;
+  		left: 30px;
+  		top: 0;
+  	}
+  	.column1, .column2, .column3, .column4, .column5, .column6 {
+  		width: 100%;
+  	}
+  	tbody tr {
+  		font-size: 14px;
+  	}
+  }
+
+  @media (max-width: 576px) {
+  	.container-table100 {
+  		padding-left: 15px;
+  		padding-right: 15px;
+  	}
+  }
+
+  /* Nyx-inspired title design */
+
+  .nyx-title {
+  	text-align: center;
+  	font-size: 40px;
+  	margin: 40px 0;
+  	color: #fff;
+  	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+	</style>
+</body>
+</html>
