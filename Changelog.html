@@ -58,10 +58,13 @@
 											</ul>
 										</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> La ricerca automatica con il testo negli appunti dovrebbe essere piu veloce (Finestra Codici Alias).</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Messo GUID a ogni 'component' sul file Product.wxs di WiX, ora si hanno tutti i riferimenti durante installazione e disinstallazioone.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Su Storico Articoli la ricerca in base al contenuto degli appunti aveva una logica sbagliata, perchè seguiva quella degli Alias, ora è stata sistemata, ricerca in autooatico solo se l'aricolo copiato esiste su Arca.</li>										
-										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Il foglio distinta ora carica il database facendo un trim alla colonna Codice e Alias, togliendo tutti gli spazi iniziali e finali, così dovrebbe essere risolto il problema dei codici esistenti e non trovati.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Lo strumento PDF->Excel, prima di convertire, unisce tutte le pagine dello STESSO file che poi viene salvato sul desktop. Se serve solo l'Excel, il pdf si puo cancellare.</li>										
-									</ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Tutte le righe del foglio Distinta hanno la stessa formattazione (con formattazione condizionale non ancora applicata)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Il foglio Distinta ora carica il database facendo un trim alla colonna Codice e Alias, togliendo tutti gli spazi iniziali e finali, così dovrebbe essere risolto il problema dei codici esistenti e non trovati.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Lo strumento PDF->Excel, prima di convertire, unisce tutte le pagine dello STESSO file che poi viene salvato sul desktop. Se serve solo l'Excel, il pdf si puo cancellare.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Una DLL per gestire i pdf, ora viene usato il pacchetto iTextSharp (anche se deprecato) che era già presente. <br> [Valutare se passare a iText 7 entro 2024]</li>
+
 								</div>
 							</div>
 						</div>
