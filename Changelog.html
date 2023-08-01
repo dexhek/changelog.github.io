@@ -7,55 +7,66 @@
 	<div class="gradient-container"></div>
 	<div class="content">
 	<div class="nyx-title"><h1>What's new?</h1></div>
-		<div class="container grid-lg">
+		<div class="container grid">
 			<div class="columns">
 				<div class="column col-10 col-sm-12 col-mx-auto text-left">
-					<!-- Here starts new ver -->
+					<!-- NEW VER -->
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
 							</div>
 							<div class="changes timeline-content">
-								<h4>8.2.8.1</h4><small>rilasciata il -07-2023</small>
+								<h4>8.2.8.1</h4><small>rilasciata il 1-08-2023</small>
 								<div class="changes-entry">
 									<ul>
-										<li><span class="label label-rounded text-light text-capitalize tag-security">Sicurezza/Info</span> La nuova linea grafica, introdotta per la prima volta con la versione 8.2.7.6, viene chiamata "Obsidian Azure"</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span> La nuova linea grafica, introdotta per la prima volta con la versione 8.2.7.6, viene chiamata "Obsidian Azure"</li>
 										<li style="list-style: none; display: inline">
 											<ul>
 												<li>Questo nome si ispira a Nyx, la dea della notte, e riflette l'essenza oscura e misteriosa del nuovo design. Il termine "Ossidiana" rappresenta il colore di base quasi nero, simboleggiando la profondità e l'oscurità della notte. Il termine "Azzurro" si riferisce agli accenti blu che aggiungono un tocco di fascino e magia al design complessivo, evocando l'immagine del cielo notturno con le stelle che brillano. L'unione, "Ossidiana Azzurra", crea un'atmosfera di eleganza, mistero e bellezza, catturando perfettamente l'essenza della dea Nyx.</li>
 											</ul>
 										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> ReNamer, questo strumento consente di rinominare in automatico tutti i file di una data cartella con il nostro codice, andandolo a cercare su Arca</li>
+										<li style="list-style: none; display: inline">
+											<ul>
+												<li>Lo strumento rinomina TUTTI i file, di qualsiasi estensione. E' consigliabile creare una cartella temporanea sul desktop e metterci dentro i file da elaborare.</li>
+												<li>Il nome vecchio del file deve esistere su arca come Alias, fare un pre-process dei nomi e rinominare dove serve.</li>
+												<li>Per dargli la cartella di input, basta selezionare un qualsiasi file, lo strumento considererà tutti i file presenti nella stessa.</li>
+											</ul>
+										</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Foglio Changelog</li>
 										<li style="list-style: none; display: inline">
 											<ul>
-												<li>Sono state applicate le nueve linee di 'Obsidian Azure'</li>
-												<li>Ora è su github, non sarà piu su SERVER-LAB</li>
-												<li>Il codice è stato ridotto e migliorato</li>
-												<li>La struttura è molto piu semplice e leggibile</li>
+												<li>Sono state applicate le nuove linee di 'Obsidian Azure'.</li>
+												<li>Ora la pagina è su Github, non sarà piu su SERVER-LAB.</li>
+												<li>Il codice è stato ridotto e migliorato.</li>
+												<li>La struttura è molto piu semplice e leggibile.</li>
 											</ul>
 										</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> La nuova GUI per la finestra di ricerca degli ordini è stata rielaborata con cura per seguire il design Obsidian Azure, garantendo un'esperienza utente più coerente e accattivante.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Lo strumento PDF.Merge diventa PDF.Tools</li>										
 										<li style="list-style: none; display: inline">
 											<ul>
-												<li>Interfaccia grafica migliorata</li>
-												<li>La vecchia funzione per unire i file pdf in uno unico è ancora disponibile, integrata nella nuova finestra (Pulsante 'Unisci')</li>
+												<li>Interfaccia grafica migliorata.</li>
+												<li>La vecchia funzione per unire i file pdf in uno unico è ancora disponibile, integrata nella nuova finestra (Pulsante 'Unisci').</li>
 												<li>Aggiunto un nuovo strumento 'Appiattisci'
 													<ul>
-														<li>Questo strumento appiattisce tutti gli elemeti della pagina (es. Moduli, Quadri, testi .. (Elementi interattivi)) rendendoli non modificabili - Lo scopo è creare uno strumento che sostituisca la ristampa in PDF per coprire le informazioni delicate (es. Pdf con cartiglio coperto per Fornitori)</li>
-														<li>ATTENZIONE! Questo strumento sovrascrive i file pdf selezionati</li>
+														<li>Questo strumento appiattisce tutti gli elemeti della pagina (es. Moduli, Quadri, testi .. (Elementi interattivi)) rendendoli non modificabili - Lo scopo è creare uno strumento che sostituisca la ristampa in PDF per coprire le informazioni delicate (es. Pdf con cartiglio coperto per Fornitori).</li>
+														<li>ATTENZIONE! Questo strumento sovrascrive i file pdf selezionati.</li>
 													</ul>
 												</li>
 											</ul>
 										</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Lo strumento PDF->Excel prima di convertire unisce tutte le pagine dello STESSO file, poi lo converte. Il file viene salvato sul desktop, se serve solo l'Excel si puo cancellare.</li>										
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> La ricerca automatica con il testo negli appunti dovrebbe essere piu veloce (Finestra Codici Alias).</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Su Storico Articoli la ricerca in base al contenuto degli appunti aveva una logica sbagliata, perchè seguiva quella degli Alias, ora è stata sistemata, ricerca in autooatico solo se l'aricolo copiato esiste su Arca.</li>										
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Il foglio distinta ora carica il database facendo un trim alla colonna Codice e Alias, togliendo tutti gli spazi iniziali e finali, così dovrebbe essere risolto il problema dei codici esistenti e non trovati.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Lo strumento PDF->Excel, prima di convertire, unisce tutte le pagine dello STESSO file che poi viene salvato sul desktop. Se serve solo l'Excel, il pdf si puo cancellare.</li>										
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Here starts new ver -->
+					<!-- NEW VER -->
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -66,12 +77,12 @@
 								<div class="changes-entry">
 									<ul>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Tema scuro aggiunto al file Changelog.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il pacchetto di installazione è stato modificato e aggiornato a Wix 4</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Apportati miglioramenti grafici minori</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Nella sezione "StatoOrdini", le date di consegna oltre il mese attuale ora mantengono il colore di default</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora molte connessioni al Database sono rese asincrone, migliorando le prestazioni complessive</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> L'algoritmo di esecuzione di molte funzioni è stato ottimizzato, portando a un notevole aumento di velocità</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Lo strumento per ottenere l'elenco dei file è stato spostato nel menu "Strumenti" come pulsante, che ora apre l'elenco in Notepad++ se disponibile, altrimenti in Notepad di Windows</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il pacchetto di installazione è stato modificato e aggiornato a Wix 4.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Apportati miglioramenti grafici minori.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Nella sezione "StatoOrdini", le date di consegna oltre il mese attuale ora mantengono il colore di default.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora molte connessioni al Database sono rese asincrone, migliorando le prestazioni complessive.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> L'algoritmo di esecuzione di molte funzioni è stato ottimizzato, portando a un notevole aumento di velocità.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Lo strumento per ottenere l'elenco dei file è stato spostato nel menu "Strumenti" come pulsante, che ora apre l'elenco in Notepad++ se disponibile, altrimenti in Notepad di Windows.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il codice è stato sottoposto ad un processo di revisione e ottimizzazione, che ha comportato la rimozione di eventuali elementi superflui e l'apporto di modifiche minori al fine di migliorare la sua efficienza, leggibilità e manutenibilità.</li>
 									</ul>
 								</div>
@@ -1628,7 +1639,7 @@
   	color: inherit;
   	font-weight: 500;
   	line-height: 1.2;
-  	margin: -.18em 0 .5em;
+  	margin: -.15em 0 .5em;
   	font-size: 2em;
   }
 
@@ -1663,12 +1674,16 @@
   }
 
   ul ul {
-  	margin: .8rem 0 .8rem .8rem;
+  	margin: .4rem 0 .8rem .8rem;
   	list-style-type: circle;
   }
 
   ul li {
-  	margin-top: .4rem;
+  	margin-top: 0.8rem;
+  }
+  
+  ul li ul li {
+  margin-top: 0.1rem;
   }
 
   .label {
@@ -1682,7 +1697,7 @@
 
   .label.label-rounded {
   	border-radius: 5rem;
-  	padding: .1rem .4rem;
+  	padding: .1rem .5rem;
   }
 
   .container {
@@ -1693,12 +1708,8 @@
   	width: 100%;
   }
 
-  .container.grid-lg {
-  	max-width: 976px;
-  }
-
-  .container.grid-sm {
-  	max-width: 616px;
+  .container.grid {
+  	max-width: 1000px;
   }
 
   .columns {
@@ -1713,17 +1724,6 @@
   	max-width: 100%;
   	padding-left: .4rem;
   	padding-right: .4rem;
-  }
-
-  .col-auto {
-  	flex: none;
-  	max-width: none;
-  	width: auto;
-  }
-
-  .col-mx-auto {
-  	margin-left: auto;
-  	margin-right: auto;
   }
 
   .text-light {
@@ -1745,7 +1745,7 @@
   .timeline .timeline-item {
   	display: flex;
   	margin-bottom: 1.2rem;
-  	position: relative;
+  	position: relative;	
   }
 
   .timeline .timeline-item::before {
@@ -1781,15 +1781,11 @@
   	border-radius: 50%;
   	content: "";
   	display: block;
-  	height: .4rem;
-  	left: .4rem;
+  	height: .3rem;
+  	left: .35rem;
   	position: absolute;
   	top: .4rem;
-  	width: .4rem;
-  }
-
-  .timeline .timeline-item .timeline-icon.icon-lg::before {
-  	content: none;
+  	width: .3rem;
   }
 
   .tag-added {
@@ -1820,39 +1816,11 @@
   	background: #9932cc;
   }
 
-  .changes-entry>ul>li, 
+  .changes-entry>ul>li,
   .changes>li {
   	list-style: none;
   }
 
-  .changes h4 {
-  	margin-bottom: 0;
-  }
-
-  limiter {
-  	width: 100%;
-  	margin: 0 auto;
-  }
-
-  tbody tr:nth-child(even) {
-  	background-color: #383c40;
-  }
-
-  tbody tr {
-  	font-size: 15px;
-  	color: #cfd8dc;
-  	line-height: 1.2;
-  	font-weight: unset;
-  }
-
-  tbody tr:hover {
-  	color: #cfd8dc;
-  	background-color: #383c40;
-  	cursor: pointer;
-  }
-  tbody tr {
-  		font-size: 14px;
-  }
 	</style>
 </body>
 </html>
