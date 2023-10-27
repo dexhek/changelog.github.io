@@ -10,7 +10,7 @@
 		<div class="container grid">
 			<div class="columns">
 				<div class="column col-10 col-sm-12 col-mx-auto text-left">
-
+				
 				<!-- NEW VER -->
 					<div class="section timeline">
 						<div class="timeline-item">
@@ -21,14 +21,13 @@
 								<h4>8.2.8.8</h4><small>rilasciata il -10-2023</small>
 								<div class="changes-entry">
 									<ul>
-										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span> Valutare se togliere elenco codici da Strumenti Commerciali.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Quando si passava da una schermata a un altra e c'era uno spazio su textbox1 (Numero ordine), Nyx si chiudeva. La cosa succedeva spesso se si Usava Alt+Space per aprire Nyx, in quanto a volte si premeva prima lo spazio, e poi Alt.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Il menu a destra, con le opzioni di "Info su Nyx" e di riavvio, che e ancora disponibile sul menu della IconTray.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Tutto il sistema di valutazione dell'ordine (Stelle)</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Colori in base alla scadenza della DataSV, perche Stato Ordini diventava pesante da leggere. Ora e rimasta colorata solo la data consegna.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Quando si effettuava il passaggio da una schermata all'altra e si verificava la presenza di un carattere Spazio " " nel campo "Numero ordine" (textbox1), Nyx si chiudeva in modo inatteso. Questo problema si presentava frequentemente quando si apriva Nyx utilizzando la combinazione di tasti Alt+Space, poiché a volte si premeva prima il tasto spazio e successivamente il tasto Alt.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Il menu contestuale (Si apriva con i tre puntini), con le opzioni di "Info su Nyx" e di Riavvio, che è ancora disponibile sul menu della IconTray.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Il sistema di valutazione dell'ordine (le stelle) è stato completamente rimosso. (Non veniva usato)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> I colori in base alla scadenza della "DataSV" sono stati rimossi perché rendevano l'elemento "Stato Ordini" visivamente pesante. Attualmente, l'unico elemento colorato rimasto è la "data di consegna".</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> L'avviso su StrumentiC, che indicava al commerciale quanti giorni di sv stava dando al Tecnico</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Logger sul pulsante Elenco Codici, su StrumentiC.</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il menu laterale con le varie schermate e stato ristrutturato e semplificato a livello di programmazione, inoltre in basso e stata aggiunta la versione e il logo, che una volta era sulla Schermata About, ora rimossa.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> "Elenco codici" da StrumentiC, è una ripetizione del foglio Distinta, e ormai non viene aggiornato da Anni. Usare Distinta.xlsx da Strumenti</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Il menu laterale con le varie schermate è stato ristrutturato e semplificato a livello di programmazione e grafica, inoltre in basso è stata aggiunta la versione e il logo, che una volta era sulla Schermata About, ora rimossa.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Rimosso del codice vecchio di prova</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Rese asincrone alcune operazioni</li>				
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Le informazioni sui colori principali ora sono solo su App.config</li>
@@ -37,12 +36,10 @@
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Alcuni elementi della grafica, per renderla meno pesante.</li>	
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornato WIX a 4.0.2</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Aggiornato Il controllo delle licenze di Solid, per addattarsi alla nuova porta 29000</li>
-
 									</ul>
 								</div>
 							</div>
 						</div>				
-				
 				<!-- NEW VER -->
 					<div class="section timeline">
 						<div class="timeline-item">
@@ -53,12 +50,12 @@
 								<h4>8.2.8.7</h4><small>rilasciata il 04-10-2023</small>
 								<div class="changes-entry">
 									<ul>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span> Valutare se togliere "Elenco Codici" da Strumenti Commerciali.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span> Le modifiche saranno inserite sul Changelog nella versione successiva.</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-				
 				<!-- NEW VER -->
 					<div class="section timeline">
 						<div class="timeline-item">
@@ -220,7 +217,6 @@
 										<li><span class="label label-rounded text-light text-capitalize tag-fixed">Fix</span> Il foglio Distinta ora carica il database facendo un trim alla colonna Codice e Alias, togliendo tutti gli spazi iniziali e finali, così dovrebbe essere risolto il problema dei codici esistenti e non trovati.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Lo strumento PDF->Excel, prima di convertire, unisce tutte le pagine dello STESSO file che poi viene salvato sul desktop. Se serve solo l'Excel, il pdf si puo cancellare.</li>
 										<li><span class="label label-rounded text-light text-capitalize tag-removed">Rimosso</span> Una DLL per gestire i pdf, ora viene usato il pacchetto iTextSharp (anche se deprecato) che era già presente. <br> [Valutare se passare a iText 7 entro 2024]</li>
-
 								</div>
 							</div>
 						</div>
@@ -247,7 +243,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -262,7 +258,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -281,7 +277,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -298,7 +294,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -332,7 +328,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -349,7 +345,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -368,7 +364,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -385,7 +381,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -402,7 +398,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -430,7 +426,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -452,7 +448,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -475,7 +471,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -496,7 +492,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -513,7 +509,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -529,7 +525,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -545,7 +541,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -561,7 +557,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -576,7 +572,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -612,7 +608,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -633,7 +629,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -662,7 +658,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -679,7 +675,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -696,7 +692,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -713,7 +709,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -736,7 +732,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -754,7 +750,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -771,7 +767,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -788,7 +784,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -804,7 +800,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -819,7 +815,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -837,7 +833,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -855,7 +851,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -870,7 +866,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -887,7 +883,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -904,7 +900,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -920,7 +916,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -936,7 +932,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -953,7 +949,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -970,7 +966,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -989,7 +985,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1005,7 +1001,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1021,7 +1017,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1039,7 +1035,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1062,7 +1058,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1089,7 +1085,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1106,7 +1102,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1126,7 +1122,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1141,7 +1137,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1156,7 +1152,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1173,7 +1169,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1189,7 +1185,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1204,7 +1200,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1223,7 +1219,7 @@
 								</div>
 							</div>
 						</div>
-					</div><!-- Here starts new ver -->
+					</div>
 					<div class="section timeline">
 						<div class="timeline-item">
 							<div class="timeline-left">
@@ -1247,7 +1243,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1275,7 +1270,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1291,7 +1285,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1310,7 +1303,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1329,7 +1321,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1352,7 +1343,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1370,7 +1360,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1389,7 +1378,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1406,7 +1394,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1423,7 +1410,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1441,7 +1427,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1458,7 +1443,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1476,7 +1460,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1493,7 +1476,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1509,7 +1491,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1528,7 +1509,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1546,7 +1526,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1566,7 +1545,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1586,7 +1564,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1611,7 +1588,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1631,7 +1607,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1653,7 +1628,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1686,7 +1660,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1706,7 +1679,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1723,7 +1695,6 @@
 						</div>
 					</div>
 					<div class="section timeline">
-						<!-- Here starts new ver -->
 						<div class="timeline-item">
 							<div class="timeline-left">
 								<div class="timeline-icon"></div>
@@ -1749,237 +1720,196 @@
 			</div>
 		</div>
 	</div>
-	<style>
-  
-  html {
-  	font-family: sans-serif;
-  	-ms-text-size-adjust: 100%;
-  	-webkit-text-size-adjust: 100%;
-  	box-sizing: border-box;
-  	font-size: 20px;
-  	line-height: 1.5;
-  	-webkit-tap-highlight-color: transparent;
-  }
-
-  body {
-  	margin: 0;
-  	color: #cfd8dc;
-  	font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, sans-serif;
-  	font-size: .8rem;
-  	overflow-x: hidden;
-  	text-rendering: optimizeLegibility;
-  }
-
-  .gradient-container {
-  	/* Replace these values with your desired gradient start and end points */
-  	background-image: linear-gradient(135deg, #0D1319 30%, #192536 50%, #0D1319 90%);
-  	position: fixed;
-  	top: 0;
-  	left: 0;
-  	right: 0;
-  	bottom: 0;
-  }
-
-  .content {
-  	position: relative;
-  	padding: 20px;
-  	color: #fff;
-  }  
-  
-  .nyx-title {
-	text-align: center;
-	font-size: 30px;
-	margin: 30px 0;
-	color: #fff;
-	text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-  	color: inherit;
-  	font-weight: 500;
-  	line-height: 1.2;
-  	margin: -.15em 0 .5em;
-  	font-size: 2em;
-  }
-
-  h1 {
-  	font-size: 2rem;
-  }
-
-  h2 {
-  	font-size: 1.6rem;
-  }
-
-  h3 {
-  	font-size: 1.4rem;
-  }
-
-  h4 {
-  	font-size: 1.2rem;
-  }
-
-  h5 {
-  	font-size: 1rem;
-  }
-
-  h6 {
-  	font-size: .8rem;
-  }
-
-  ul {
-  	margin: .8rem 0 .8rem .8rem;
-  	padding: 0;
-  	list-style: disc inside;
-  }
-
-  ul ul {
-  	margin: .4rem 0 .8rem .8rem;
-  	list-style-type: circle;
-  }
-
-  ul li {
-  	margin-top: 0.8rem;
-  }
-  
-  ul li ul li {
-  margin-top: 0.1rem;
-  }
-
-  .label {
-  	border-radius: .1rem;
-  	line-height: 1.2;
-  	padding: .1rem .2rem;
-  	background: #2c2f33;
-  	color: #cfd8dc;
-  	display: inline-block;
-  }
-
-  .label.label-rounded {
-  	border-radius: 5rem;
-  	padding: .1rem .5rem;
-  }
-
-  .container {
-  	margin-left: auto;
-  	margin-right: auto;
-  	padding-left: .4rem;
-  	padding-right: .4rem;
-  	width: 100%;
-  }
-
-  .container.grid {
-  	max-width: 1000px;
-  }
-
-  .columns {
-  	display: flex;
-  	flex-wrap: wrap;
-  	margin-left: -.4rem;
-  	margin-right: -.4rem;
-  }
-
-  .column {
-  	flex: 1;
-  	max-width: 100%;
-  	padding-left: .4rem;
-  	padding-right: .4rem;
-  }
-
-  .text-light {
-  	color: #ffffff;
-  }
-
-  .text-left {
-  	text-align: left;
-  }
-
-  .text-center {
-  	text-align: center;
-  }
-
-  .text-capitalize {
-  	text-transform: capitalize;
-  }
-
-  .timeline .timeline-item {
-  	display: flex;
-  	margin-bottom: 1.2rem;
-  	position: relative;	
-  }
-
-  .timeline .timeline-item::before {
-  	background: #2c2f33;
-  	content: "";
-  	height: 100%;
-  	left: 11px;
-  	position: absolute;
-  	top: 1.2rem;
-  	width: 2px;
-  }
-
-  .timeline .timeline-item .timeline-left {
-  	flex: none;
-  }
-
-  .timeline .timeline-item .timeline-content {
-  	flex: auto;
-  	padding: 2px 0 2px .8rem;
-  }
-
-  .timeline .timeline-item .timeline-icon {
-  	border-radius: 50%;
-  	color: #cfd8dc;
-  	display: block;
-  	height: 1.2rem;
-  	text-align: center;
-  	width: 1.2rem;
-  }
-
-  .timeline .timeline-item .timeline-icon::before {
-  	border: .1rem solid #6255d9;
-  	border-radius: 50%;
-  	content: "";
-  	display: block;
-  	height: .3rem;
-  	left: .35rem;
-  	position: absolute;
-  	top: .4rem;
-  	width: .3rem;
-  }
-
-  .tag-added {
-  	background: #32b643;
-  }
-
-  .tag-changed {
-  	background: #b59824;
-  }
-
-  .tag-removed {
-  	background: #696969;
-  }
-
-  .tag-knownissue {
-  	background: #dc143c;
-  }
-
-  .tag-fixed {
-  	background: #1e90ff;
-  }
-
-  .tag-security {
-  	background: #5d9ec7;
-  }
-
-  .tag-beta {
-  	background: #9932cc;
-  }
-
-  .changes-entry>ul>li,
-  .changes>li {
-  	list-style: none;
-  }
-
+	<style>  
+			  html {
+				font-family: sans-serif;
+				-ms-text-size-adjust: 100%;
+				-webkit-text-size-adjust: 100%;
+				box-sizing: border-box;
+				font-size: 20px;
+				line-height: 1.5;
+				-webkit-tap-highlight-color: transparent;
+			  }
+			  body {
+				margin: 0;
+				color: #cfd8dc;
+				font-family: -apple-system, system-ui, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, sans-serif;
+				font-size: .8rem;
+				overflow-x: hidden;
+				text-rendering: optimizeLegibility;
+			  }
+			  .gradient-container {
+				/* Replace these values with your desired gradient start and end points */
+				background-image: linear-gradient(135deg, #0D1319 30%, #192536 50%, #0D1319 90%);
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			  }
+			  .content {
+				position: relative;
+				padding: 20px;
+				color: #fff;
+			  }  
+			  .nyx-title {
+				text-align: center;
+				font-size: 30px;
+				margin: 30px 0;
+				color: #fff;
+				text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+			  }
+			  h1, h2, h3, h4, h5, h6 {
+				color: inherit;
+				font-weight: 500;
+				line-height: 1.2;
+				margin: -.15em 0 .5em;
+				font-size: 2em;
+			  }
+			  h1 {
+				font-size: 2rem;
+			  }
+			  h2 {
+				font-size: 1.6rem;
+			  }
+			  h3 {
+				font-size: 1.4rem;
+			  }
+			  h4 {
+				font-size: 1.2rem;
+			  }
+			  h5 {
+				font-size: 1rem;
+			  }
+			  h6 {
+				font-size: .8rem;
+			  }
+			  ul {
+				margin: .8rem 0 .8rem .8rem;
+				padding: 0;
+				list-style: disc inside;
+			  }
+			  ul ul {
+				margin: .4rem 0 .8rem .8rem;
+				list-style-type: circle;
+			  }
+			  ul li {
+				margin-top: 0.8rem;
+			  }
+			  ul li ul li {
+			  margin-top: 0.1rem;
+			  }
+			  .label {
+				border-radius: .1rem;
+				line-height: 1.2;
+				padding: .1rem .2rem;
+				background: #2c2f33;
+				color: #cfd8dc;
+				display: inline-block;
+			  }
+			  .label.label-rounded {
+				border-radius: 5rem;
+				padding: .1rem .5rem;
+			  }
+			  .container {
+				margin-left: auto;
+				margin-right: auto;
+				padding-left: .4rem;
+				padding-right: .4rem;
+				width: 100%;
+			  }
+			  .container.grid {
+				max-width: 1000px;
+			  }
+			  .columns {
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: -.4rem;
+				margin-right: -.4rem;
+			  }
+			  .column {
+				flex: 1;
+				max-width: 100%;
+				padding-left: .4rem;
+				padding-right: .4rem;
+			  }
+			  .text-light {
+				color: #ffffff;
+			  }
+			  .text-left {
+				text-align: left;
+			  }
+			  .text-center {
+				text-align: center;
+			  }
+			  .text-capitalize {
+				text-transform: capitalize;
+			  }
+			  .timeline .timeline-item {
+				display: flex;
+				margin-bottom: 1.2rem;
+				position: relative;	
+			  }
+			  .timeline .timeline-item::before {
+				background: #2c2f33;
+				content: "";
+				height: 100%;
+				left: 11px;
+				position: absolute;
+				top: 1.2rem;
+				width: 2px;
+			  }
+			  .timeline .timeline-item .timeline-left {
+				flex: none;
+			  }
+			  .timeline .timeline-item .timeline-content {
+				flex: auto;
+				padding: 2px 0 2px .8rem;
+			  }
+			  .timeline .timeline-item .timeline-icon {
+				border-radius: 50%;
+				color: #cfd8dc;
+				display: block;
+				height: 1.2rem;
+				text-align: center;
+				width: 1.2rem;
+			  }
+			  .timeline .timeline-item .timeline-icon::before {
+				border: .1rem solid #6255d9;
+				border-radius: 50%;
+				content: "";
+				display: block;
+				height: .3rem;
+				left: .35rem;
+				position: absolute;
+				top: .4rem;
+				width: .3rem;
+			  }
+			  .tag-added {
+				background: #32b643;
+			  }
+			  .tag-changed {
+				background: #b59824;
+			  }
+			  .tag-removed {
+				background: #696969;
+			  }
+			  .tag-knownissue {
+				background: #dc143c;
+			  }
+			  .tag-fixed {
+				background: #1e90ff;
+			  }
+			  .tag-security {
+				background: #5d9ec7;
+			  }
+			  .tag-beta {
+				background: #9932cc;
+			  }
+			  .changes-entry>ul>li,
+			  .changes>li {
+				list-style: none;
+			  }
 	</style>
 </body>
 </html>
