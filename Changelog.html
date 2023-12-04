@@ -17,26 +17,31 @@
 								<div class="timeline-icon"></div>
 							</div>
 							<div class="changes timeline-content">
-								<h4>8.2.9.1</h4><small>rilasciata il -11-2023</small>
+								<h4>8.2.9.1</h4><small>rilasciata il 04-12-2023</small>
 								<div class="changes-entry">
 									<ul>
-										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span>EveryNyx resta ancora in Beta, servono ulteriori test e istruzione aggiuntiva agli Utenti di Nyx</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> ImageTXT esce dalla Beta, ed è stata confermata come funzione aggiuntiva di Nyx, inserita su Strumenti.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-security">Informazione</span> EveryNyx resta ancora in Beta, servono ulteriori test e istruzione aggiuntiva agli Utenti di Nyx</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span>  Migliorata velocità di caricamento degli ordini sviluppati, ora quando viene aperta la finestra per la prima volta carica la giornata corrente dalla query. Quando viene fatta una ricerca con altri filtri , carica tutto il db Ordini, poi filtra.. Questa schermata e ancora in fase di miglioramento.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-added">Aggiunto</span> Un nuovo controllo eseguito durante l'inserimento dell'ordine. Viene confrontato il numero di righe su libellula con il numero di lavorazioni "LAS" presenti nella distinta dell'ordine, l'utente viene avvisato in caso i due numeri non siano uguali tra loro.</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> ImageTXT esce dalla Beta, ed è stata confermata come funzione aggiuntiva di Nyx, inserita su Strumenti.</li>
 										<li style="list-style: none; display: inline">
 											<ul>
-												<li>Di default mancano due cartelle per far funzionare lo strumento, queste devono essere messe a mano (un sistema automatico verra pensato in futuro, se lo strumento non verra deprecato nelle provvime versioni.) Comunque comparirà un messaggio su come proseguire.</li>												
+												<li>Di default mancano due cartelle per far funzionare lo strumento (binari di Tesseract), queste devono essere messe a mano (un sistema automatico verrà pensato in futuro se lo strumento non verra deprecato nelle prossime versioni) <br> Comunque comparirà un messaggio su come proseguire.</li>												
 											</ul>
 										</li>
-										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora su home è stato aggiunto anche l'Utente che ha sviluppato l'ordine. </li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Ora su home è stato aggiunto anche l'Utente che ha sviluppato l'ordine, vicino alla data SV. </li>
 										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Stato ordini e stato migliorato, è il 100% piu veloce a caricare i dati, inoltre sono state fatte le seguenti modifiche:</li>
 										<li style="list-style: none; display: inline">
 											<ul>
 												<li>Sul tooltip dello stato, oltre alla descrizione, è stata aggiunta la data e ora di inserimento di questa.</li>
 												<li>Sul tooltip dell'ordine, oltre alle righe, sono state aggiunte le informazioni su chi e quando è stato inserito l'ordine, ed è ora presente anche la data di riferimento (data arrivo ordine)</li>
 												<li>Sono state modificate e semplificate a livello visivo alcune informazioni, è stato tolto lo 00 dai clienti ora sono nel formato C0000, inoltre, i nomi degli utenti compaiono senza il dominio (Es. Utente00 invece che LASERPOINT\Utente00) </li>
-
+												<li>Tolto il tempo totale di sviluppo e il peso per ogni ordine</li>
+												<li>Modificata la grafica del counter, e cambiato colore a rosso solo quando gli ordini da sv sono superiori a 45</li>
 											</ul>
 										</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-changed">Modificato</span> Pulizia e miglioramneti minori al codice</li>
+
 									</ul>
 								</div>
 							</div>
@@ -52,7 +57,7 @@
 								<div class="changes-entry">
 									<ul>
 										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Aggiunto il nuovo sistema di ricerca EveryNyx per una ricerca veloce in tutto il server </li>
-										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Aggiunto ImageTXT, uno strumento che identifica e converte il testo presente in un immagine negli Apppunti (catturata eseguendo lo strumento di cattura di Windows > Win10)</li>
+										<li><span class="label label-rounded text-light text-capitalize tag-beta">Beta</span> Aggiunto ImageTXT, uno strumento che identifica e converte il testo presente in un immagine negli Appunti (catturata eseguendo lo strumento di cattura di Windows > Win10)</li>
 									</ul>
 								</div>
 							</div>
